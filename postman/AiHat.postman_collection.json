@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "9bb5de19-a763-4df4-bc0d-2baca44031c3",
+		"name": "AiHat",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "275829"
+	},
+	"item": [
+		{
+			"name": "rag-test",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"aiSetup\":{\n    \"engine\": \"ChatGPT\",\n    \"model\": \"gpt-4-turbo\",\n    \"useRag\": \"true\"\n   },\n   \"stockName\": \"US0378331005\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:3000/api/v1/rag-test",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"rag-test"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
